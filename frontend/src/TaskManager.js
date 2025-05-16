@@ -179,7 +179,7 @@ function TaskManager() {
             {/* List of items */}
             <div className='d-flex flex-column w-100'>
     {
-        tasks.length > 0 ? (
+        Array.isArray(tasks) && tasks.length > 0 ? (
             tasks.map((item) => (
                 <div key={item._id} className='m-2 p-2 border bg-light
                     w-100 rounded-3 d-flex justify-content-between
